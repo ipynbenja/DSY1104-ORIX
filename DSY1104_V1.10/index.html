@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Orix</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/IconoOrix.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar bg-orix1 static-top">
+            <div class="container d-flex justify-content-between align-items-center">
+                
+                <a class="navbar-brand d-flex" href="index.html">
+                    <img style="width: 100px;" src="assets/img/logo/logo_orix_white_horizontal.png" alt="Logo Orix">
+                </a>
+                
+                <div class="d-flex gap-2">
+                    
+                    <div class="dropdown">
+                        <a class="btn btn-primary text-white dropdown-toggle" href="#" id="loginDropdown" role="button" 
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i> Iniciar Sesión
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+                        <li><a class="dropdown-item" href="inicio-sesion.html">Cliente</a></li>
+                        <li><a class="dropdown-item" href="inicio-sesion-proveedor.html">Proveedor</a></li>
+                        </ul>
+                    </div>
+
+                    <a class="btn btn-secondary text-white" id="botonRegister" href="registro.html">
+                        <i class="bi bi-plus-circle"></i> Registrarse
+                    </a>
+
+                    <a class="btn btn-warning text-black" href="no-accesible.html">
+                        <i class="bi bi-question-circle"></i> Ayuda
+                    </a>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center">
+                            <!-- Page heading-->
+                            <h1 class="mb-5 text-white">Busca f&aacute;cilmente todo lo que necesites</h1>
+                            
+                            <form class="form-subscribe" id="contactForm">
+                                <!-- Email address input-->
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Productos...">
+                                    </div>
+                                    <div class="col-auto"><button class="btn btn-primary btn-lg" type="submit">Buscar</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--
+        Novedades 
+        <section class="showcase">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="/startbootstrap-landing-page-gh-pages/assets/img/lentes_estilos_tendencias.webp" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                <img src="/startbootstrap-landing-page-gh-pages/assets/img/lentesplaya.webp" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                <img src="/startbootstrap-landing-page-gh-pages/assets/img/mundo_moda_masculina_lentes.webp" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+            Controles del carrusel 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+
+        -->
+        <!-- Image Showcases-->
+        <section class="showcase bg-orix5">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/Lentes1.webp')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2 class="fw-bold">Productos</h2>
+                        <p class="lead mb-0">Descubre todo nuestro cat&aacute;logo de productos para una mejor visi&oacute;n<br></p>
+                        <a class="btn btn-primary btn-goto-orix mt-3" href="catalogo-productos.html">Ir al Cat&aacute;logo</a>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/Lentes2Lib.jpg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2 class="fw-bold">Salud Visual</h2>
+                        <p class="lead mb-0">Obt&eacute;n información sobre c&oacute;mo cuidar tu visi&oacute;n en nuestros blogs</p>
+                        <a class="btn btn-primary btn-goto-orix mt-3" href="blogs-salud-visual.html">Ir a Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="footer bg-orix3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="sobre-nosotros.html">Acerca de</a></li>
+                            <li class="list-inline-item fw-bold text-white">⋅</li>
+                            <li class="list-inline-item"><a href="reclamos.html">Reclamos y Sugerencias</a></li>
+                        </ul>
+                        <p class="text-white small mb-4 mb-lg-0"><i class="bi bi-house"></i> Los Camarones 4573, Providencia</p>
+                        <p class="text-white small mb-4 mb-lg-0"><i class="bi bi-telephone"></i> +56 9 7463 9581</p>
+                        <p class="text-white small mb-4 mb-lg-0"><i class="bi bi-envelope"></i> orixoptica@duocuc.cl</p>
+                        <p class="text-white mb-4 mb-lg-0 fw-bold">&copy; Orix 2025. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline">
+                            <li class="list-inline-item me-4">
+                                <a href="https://www.facebook.com/login/?locale=es_LA"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="https://web.whatsapp.com/"><i class="bi-whatsapp fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/accounts/login/"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/logueado.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

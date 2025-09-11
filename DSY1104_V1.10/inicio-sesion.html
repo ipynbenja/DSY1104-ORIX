@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Orix</title>
+  <link rel="icon" type="image/x-icon" href="assets/IconoOrix.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("formInicioSesion");
+
+    form.addEventListener("submit", function(evento) {
+      evento.preventDefault(); //Evita el envío por defecto para manejar la lógica de cifrado
+
+        if (!form.checkValidity()) {
+            evento.stopPropagation();
+        } else {
+            const input_pass = document.getElementById("password");
+            
+            input_pass.value = SHA1(input_pass.value);
+            sessionStorage.setItem('usuarioLogueado', 'true');
+            window.location.href = form.action;
+        }
+    }, false);
+});
+</script>
+<script type="text/javascript" src="js/sha1.js"></script>
+
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">
+
+  <div class="card shadow-lg border-0 rounded-4 p-4" style="max-width: 400px; width: 100%;">
+    
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-orix1">Orix</h2>
+      <p class="text-muted">Bienvenido, por favor inicia sesión</p>
+    </div>
+
+    <form id="formInicioSesion" method="POST" ACTION="index.html">
+      <div class="mb-3">
+        <label for="username" class="form-label">Nombre de usuario o Correo electrónico</label>
+        <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario o correo" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+      </div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+      </div>
+
+      <div class="text-center mt-3">
+        <a href="no-accesible.html" class="text-decoration-none text-orix3">¿Has olvidado tu contraseña?</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

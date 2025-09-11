@@ -1,0 +1,223 @@
+:root {
+  --orix1: #1A1A40;
+  --orix2: #1B203B;
+  --orix3: #415A77;
+  --orix4: #778DA9;
+  --orix5: #E0E1DD;
+  --orix6: #F7F7F7;
+  --orix7: #FFFFFF;
+  --orix9: #D4AF37;
+  --orix10: #b82828;
+}
+
+/* Estilos globales y tipografía */
+body, a {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+/* Clases personalizadas de color */
+.bg-orix1 {
+  background-color: var(--orix1) !important;
+}
+
+.bg-orix3 {
+  background-color: var(--orix3) !important;
+}
+
+.bg-orix5 {
+  background-color: var(--orix5) !important;
+}
+
+.bg-orix6 {
+  background-color: var(--orix6) !important;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-weight: 700;
+}
+
+.sub-bar { /*Implementada en catálogo-productos-prov.html*/
+  position: sticky;
+  top: 0;
+  background-color: var(--orix1);
+  padding: 6px 0;
+  z-index: 1030;
+}
+
+.sub-bar p {
+  margin: 0;
+}
+
+/* Masthead (Header) */
+header.masthead {
+  position: relative;
+  background-color: var(--orix2);
+  background: url("../assets/img/LentesPagPrincipal.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead:before {
+  content: "";
+  position: absolute;
+  background-color: var(--orix2);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.masthead h1 {
+  font-size: 2rem;
+}
+
+
+@media (min-width: 768px) {
+  .masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Formulario */
+.form-subscribe .form-control {
+  border: 1px solid #eee;
+}
+
+.form-subscribe .form-control:focus {
+  border-color: #fff;
+  color: #080808;
+}
+
+.form-subscribe .form-control::placeholder {
+  color: #444444;
+}
+
+/*Botones personalizados*/
+.btn-goto-orix {
+    color: var(--orix7) !important;
+    border-color: var(--orix7) !important;
+    background-color: var(--orix1) !important;
+}
+
+.btn-goto-orix:hover {
+    background-color: var(--orix3) !important;
+}
+
+.btn-goto-orix:active {
+    color: #080808 !important;
+    border-color: #080808 !important;
+    background-color: var(--orix7) !important;
+}
+
+.btn-cart {
+    border-color: var(--orix7) !important;
+    background-color: var(--orix3) !important;
+}
+
+.btn-cart:hover {
+    border-color: #080808 !important;
+    color: #080808 !important;
+    background-color: var(--orix5) !important;
+}
+
+.orix-blog-img {
+  border: var(--orix5) solid;
+}
+
+.orix-blog-img:hover {
+  border: var(--orix9) solid;
+}
+
+.orix-blog-a {
+  color: var(--orix2)
+}
+
+.orix-blog-a:hover {
+  color: var(--orix3)
+}
+
+.orix-blog-a:active {
+  color: var(--orix9)
+}
+
+.orix-blog-a:visited {
+  color: var(--orix4)
+}
+
+.orix-blog-a-v2 {
+  color: var(--orix1)
+}
+
+.orix-blog-a-v2:hover {
+  color: var(--orix9)
+}
+
+a.btn.btn-orix-red {
+  background-color: var(--orix10);
+  color: #fff;
+  border: none;
+}
+
+a.btn.btn-orix-red:hover,
+a.btn.btn-orix-red:focus {
+  background-color: #a02020;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Secciones de showcase (imágenes y texto) */
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7.5rem;
+  }
+}
+
+/* Footer (Pie de página) */
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.list-inline a {
+  color: var(--orix6);
+}
+
+.list-inline a:hover,
+.list-inline a:focus {
+  text-decoration: none;
+  color: var(--orix9);
+}
